@@ -13,4 +13,6 @@ class HouseAdmin(admin.ModelAdmin):
     list_filter = ("price_per_night", "pets_allowed")
     search_fields = ("address",)
     list_display_links = ("name", "address") 
+    # link를 추가해줌
     list_editable = ("pets_allowed",)    
+    #List에서 edit가 가능해짐
